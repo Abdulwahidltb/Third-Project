@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="jquery-1.7.1.js" type="text/javascript"></script>
+    <script src="jquery-1.7.1.min.js" type="text/javascript"></script>
+    <link href="StyleSheet.css" rel="stylesheet" type="text/css" />
+     <script type="text/javascript">
+         $(document).ready(function () {
+             $("#dvLogin").load("login.html");
+         });
+
+    </script>
+</head>
+<body>
+<div id="dvTop">
+<table width="100%">
+<tr><td style="width:50%"><h3>Welcome to My First Website</h3></td>
+<td><div id="dvLogin" style="position:relative;"></div></td></tr>
+</table>
+<div id="dvLeft">
+<a href="Home.html" >Home</a><br />
+<a href="MyProducts.html" >Products</a><br />
+<a href="Contact.html" >Contact</a><br />
+</div>
+<div id="dvRight">
+<table width="100%" height="400px">
+    <tr>
+        <td ></td>
+    </tr>
+    <tr>
+        <td>
+        <table width="100%" height="300px">
+        <tr>
+        <td>Please Enter your Name</td>
+        <td><input type="text" id="txtName" /></td>
+        </tr>
+        <tr><td>Please Select your Gender</td>
+        <td>
+        <input type="radio" name="gen" />Male 
+        <input type="radio" name="gen" />female 
+        </td></tr>
+        <tr><td>Please Provide your Feedback</td>
+        <td><textarea cols="40" rows="5"></textarea></td></tr>
+        
+        <tr><td><input type="button" value="Submit Feedback" /></td></tr>
+        </table>
+        </td>
+    </tr>
+</table>
+</div>
+<div id="dvBottom">
+Copyright @ Iqra University
+</div>
+</body>
+</html>

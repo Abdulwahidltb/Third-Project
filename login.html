@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="jquery-1.7.1.js" type="text/javascript"></script>
+    <script src="jquery-1.7.1.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#txtName").blur(function () {
+                if ($("#txtName").val() == "")
+                    $("#NameValidator").show("slow");
+                else
+                    $("#NameValidator").hide("slow");
+            });
+            $("#txtPassword").blur(function () {
+                if ($("#txtPassword").val() == "")
+                    $("#PassValidator").show("slow");
+                else
+                    $("#PassValidator").hide("slow");
+            });
+
+            $("#btnShowLogin").click(function () {
+                $("#tblLogin").slideToggle("slow");
+            });
+        });
+
+    </script>
+</head>
+<body>
+    <div style="text-align:right;">
+        <input id="btnShowLogin" type="button" value="Login" /></div>
+    <table id="tblLogin" style="display:none; background-color:yellow;color:white;">
+        <tr>
+            <td>
+                Please Enter your Name
+            </td>
+            <td>
+                <input id="txtName" type="text" />
+                <div id="NameValidator" style="display:none; color:Red;">Name is missing</div>
+            </td>
+        </tr>
+         <tr>
+            <td>
+                Please Enter your Password
+            </td>
+            <td>
+                <input id="txtPassword" type="password" />
+                <div id="PassValidator" style="display:none; color:Red;">Password is missing</div>
+            </td>
+        </tr>
+        <tr>
+        <td colspan="2" style="text-align:right;">
+            <input id="btnLogin" type="button" value="Login" /></td>
+        </tr>
+    </table>
+</body>
+</html>
